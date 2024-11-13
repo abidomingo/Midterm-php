@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h3>Detach Subject from Student</h3>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="../root/dashboard.php">Dashboard</a></li>
             <li class="breadcrumb-item"><a href="register.php">Register Student</a></li>
             <li class="breadcrumb-item active" aria-current="page">Detach Subject from Student</li>
         </ol>
