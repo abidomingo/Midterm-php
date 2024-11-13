@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once '../functions.php';
-require_once '../header.php';
+require_once '../root/functions.php';
+require_once '../root/header.php';
 
 // Guard to ensure only logged-in users can access this page
 guard();
@@ -148,4 +148,4 @@ $subjectsToAttach = array_filter($availableSubjects, function($subject) use ($at
     </div>
 </div>
 
-<?php require_once '../footer.php'; ?>
+<?php require_once '../root/footer.php'; ?>
