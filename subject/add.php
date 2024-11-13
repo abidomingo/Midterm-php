@@ -1,6 +1,6 @@
 <?php
-require_once '../header.php'; // Include the header
-require_once '../functions.php'; // Include the functions file
+require_once '../root/header.php'; // Include the header
+require_once '../root/functions.php'; // Include the functions file
 
 // Guard to restrict access to logged-in users only
 guard();
@@ -145,4 +145,4 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['code'
 </div>
 
 <?php
-require_once '../footer.php'; // Include the footer
+require_once '../root/footer.php'; // Include the footer
