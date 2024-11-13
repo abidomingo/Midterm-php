@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h3>Register a New Student</h3>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="../root/dashboard.php">Dashboard</a></li>
             <li class="breadcrumb-item active" aria-current="page">Register Student</li>
         </ol>
     </nav>
