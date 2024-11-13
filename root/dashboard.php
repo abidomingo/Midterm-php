@@ -1,5 +1,5 @@
 <?php
-require_once 'header.php';
+require_once '../root/header.php';
 require_once 'functions.php'; // Ensure functions.php is included
 
 // Ensure the user is logged in
@@ -23,7 +23,7 @@ guard();
             <div class="card-header">Add a Subject</div>
             <div class="card-body">
                 <p>This section allows you to add a new subject in the system. Click the button below to proceed with the adding process.</p>
-                <a href="subject/add.php" class="btn btn-primary">Add Subject</a>
+                <a href="../subject/add.php" class="btn btn-primary">Add Subject</a>
             </div>
         </div>
     </div>
