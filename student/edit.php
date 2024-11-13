@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../functions.php';
+require_once '../root/functions.php';
 
 // Guard to ensure only logged-in users can access this page
 guard();
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<?php require_once '../header.php'; ?>
+<?php require_once '../root/header.php'; ?>
 
 <div class="container my-5">
     <h3>Edit Student</h3>
@@ -87,4 +87,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </div>
 
-<?php require_once '../footer.php'; ?>
+<?php require_once '../root/footer.php'; ?>
