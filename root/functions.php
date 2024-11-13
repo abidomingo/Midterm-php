@@ -113,5 +113,34 @@ function getSelectedSubjectData($index) {
     return $_SESSION['subjects'][$index] ?? null;
 }
 
+function validateSubjectData($subject_data) {
+    $errors = [];
+    
+    // Check if the subject code is empty
+    if (empty($subject_data['subject_code'])) {
+        $errors[] = "Subject Code is required";
+    }
+    
+    // Check if the subject name is empty
+    if (empty($subject_data['subject_name'])) {
+        $errors[] = "Subject Name is required";
+    }
+    
+    return $errors;
+}
+
+function checkDuplicateSubjectData($subject_data) {
+    // Assuming subjects are stored in session
+    foreach ($_SESSION['subjects'] as $subject) {
+        // Check if the subject code or name already exists
+        if ($subject['subject_code'] === $subject_data['subject_code'] || $subject['subject_name'] === $subject_data['subject_name']) {
+            return "Duplicate Subject: " . $subject_data['subject_code'] . " or " . $subject_data['subject_name'] . " already exists.";
+        }
+    }
+    
+    return false;  // No duplicates found
+}
+
+
 
 ?>
