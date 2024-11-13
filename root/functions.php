@@ -49,7 +49,12 @@ function displayErrors($errors) {
     return $html;
 }
 
-
+function guard() {
+    if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
+        header("Location: index.php");
+        exit;
+    }
+}
 
 
 
