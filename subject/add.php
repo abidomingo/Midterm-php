@@ -71,7 +71,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['code'
 <h3>Add a New Subject</h3>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="../root/dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item active" aria-current="page">Add Subject</li>
     </ol>
 </nav>

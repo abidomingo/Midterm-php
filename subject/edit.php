@@ -1,5 +1,5 @@
 <?php
-require_once '../header.php'; // Include the header
+require_once '../root/header.php'; // Include the header
 
 // Guard to restrict access to logged-in users only
 guard();
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h3>Edit Subject</h3>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="../root/dashboard.php">Dashboard</a></li>
         <li class="breadcrumb-item"><a href="add.php">Add Subject</a></li>
         <li class="breadcrumb-item active" aria-current="page">Edit Subject</li>
     </ol>
@@ -92,4 +92,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 <?php
-require_once '../footer.php'; // Include the footer
+require_once '../root/footer.php'; // Include the footer

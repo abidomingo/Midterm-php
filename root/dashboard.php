@@ -1,5 +1,5 @@
 <?php
-require_once '../root/header.php';
+require_once 'header.php';
 require_once 'functions.php'; // Ensure functions.php is included
 
 // Ensure the user is logged in
