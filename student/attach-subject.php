@@ -71,7 +71,7 @@ $subjectsToAttach = array_filter($availableSubjects, function($subject) use ($at
     <h3>Attach Subject to Student</h3>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="../root/dashboard.php">Dashboard</a></li>
             <li class="breadcrumb-item"><a href="register.php">Register Student</a></li>
             <li class="breadcrumb-item active" aria-current="page">Attach Subject to Student</li>
         </ol>
@@ -137,7 +137,7 @@ $subjectsToAttach = array_filter($availableSubjects, function($subject) use ($at
                                 <td><?php echo htmlspecialchars($subject['subject_code']); ?></td>
                                 <td><?php echo htmlspecialchars($subject['subject_name']); ?></td>
                                 <td>
-                                    <a href="dettach-subject.php?student_id=<?php echo urlencode($student_id); ?>&subject_code=<?php echo urlencode($subject['subject_code']); ?>" class="btn btn-sm btn-danger">Detach Subject</a>
+                                    <a href="detach-subject.php?student_id=<?php echo urlencode($student_id); ?>&subject_code=<?php echo urlencode($subject['subject_code']); ?>" class="btn btn-sm btn-danger">Detach Subject</a>
                                 </td>
                             </tr>
                         <?php endif; ?>

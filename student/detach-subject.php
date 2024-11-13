@@ -1,6 +1,6 @@
 <?php
-require_once '../header.php';
-require_once '../functions.php';
+require_once '../root/header.php';
+require_once '../root/functions.php';
 
 // Guard to ensure only logged-in users can access this page
 guard();
@@ -69,10 +69,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </ul>
 
     <!-- Form to confirm detachment -->
-    <form method="POST" action="dettach-subject.php?student_id=<?php echo urlencode($student_id); ?>&subject_code=<?php echo urlencode($subject_code); ?>">
+    <form method="POST" action="detach-subject.php?student_id=<?php echo urlencode($student_id); ?>&subject_code=<?php echo urlencode($subject_code); ?>">
         <a href="register.php" class="btn btn-secondary">Cancel</a>
         <button type="submit" class="btn btn-danger">Detach Subject from Student</button>
     </form>
 </div>
 
-<?php require_once '../footer.php'; ?>
+<?php require_once '../root/footer.php'; ?>
