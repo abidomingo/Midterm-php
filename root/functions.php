@@ -56,7 +56,12 @@ function guard() {
     }
 }
 
-
+function checkUserSessionIsActive(): void{
+    if (isset($_SESSION['email'])&& !empty($_SESSION['email'])) {
+        header(header:"Location dashboard.php");
+        exit;
+    }
+}
 
 
 
