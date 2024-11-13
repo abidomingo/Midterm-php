@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../functions.php';
+require_once '../root/functions.php';
 
 guard();
 
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php require_once '../header.php'; ?>
+<?php require_once '../root/header.php'; ?>
 
 <div class="container my-5">
     <h3>Register a New Student</h3>
@@ -117,4 +117,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </div>
 
-<?php require_once '../footer.php'; ?>
+<?php require_once '../root/footer.php'; ?>
