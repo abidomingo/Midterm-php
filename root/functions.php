@@ -56,13 +56,29 @@ function guard() {
     }
 }
 
-function checkUserSessionIsActive(): void{
-    if (isset($_SESSION['email'])&& !empty($_SESSION['email'])) {
-        header(header:"Location dashboard.php");
-        exit;
+
+function validateStudentData($student_data) {
+    $errors = [];
+    if (empty($student_data['student_id'])) {
+        $errors[] = "Student ID is required";
     }
+    if (empty($student_data['first_name'])) {
+        $errors[] = "First Name is required";
+    }
+    if (empty($student_data['last_name'])) {
+        $errors[] = "Last Name is required";
+    }
+    return $errors;
 }
 
+function checkDuplicateStudentData($student_data) {
+    foreach ($_SESSION['students'] as $student) {
+        if ($student['student_id'] === $student_data['student_id']) {
+            return "Duplicate Student ID";
+        }
+    }
+    return "";
+}
 
 
 
